@@ -25,3 +25,12 @@ function handler({api, event, helpers, imports}) {
 ```
 create a new event handler with your script
 fire that event and observe
+
+
+IN script.js
+#Record Operations Utilities which can be in imported in any UIB client script (Make sure to make the client script include accessible in all scopes)
+
+createRecord - Function to execute create record data broker with necessary arguments
+updateRecord - Function to execute update record data broker with necessary arguments
+deleteRecord - Function to execute delete record data broker with necessary arguments
+/*Sample script to show how to import client script include can be included :- function handler({api, event, helpers, imports}) { const { createRecord, updateRecord, deleteRecord } = imports'global.Record Operation Utilities'; } */
